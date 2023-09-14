@@ -1,2 +1,5 @@
-# segoleneganzin.github.io
-Plateforme OhMyFood - projet 3 OpenClassrooms
+# Plateforme Oh My Food
+
+## Dynamiser une page web avec des animations CSS
+
+projet 3 OpenClassrooms
