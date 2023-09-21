@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  background: #f3f3f3;
+}
+
+/****** Imports ***********/
+/* google font Roboto */
+/* google font Shrikhand */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header__title,
+.footer__title {
+  font-family: "Shrikhand", sans-serif;
+}/*# sourceMappingURL=main.css.map */
