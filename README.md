@@ -4,7 +4,7 @@
 
 projet 3 OpenClassrooms
 
-## Technologies 
+## Technologies
 
-HTML5/CSS3
+HTML5/CSS3 <br/>
 Sass
