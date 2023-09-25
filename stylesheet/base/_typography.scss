@@ -6,9 +6,36 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  color: $font-principale-color;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0%;
+}
+a {
+  color: $font-principale-color;
+}
 .header__title,
 .footer__title {
   font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+}
+
+.header__title {
+  font-size: $font-size-header-title;
+}
+
+.section__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.important-content {
+  font-size: 16px;
+  font-weight: 400;
+  &--bold {
+    font-weight: 500;
+  }
 }
