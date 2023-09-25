@@ -1,10 +1,11 @@
 .header {
+  background-color: $bg-color-secondary;
   width: 100%;
+  display: flex;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  height: max-content;
   &__title {
     width: fit-content;
-    margin: 14px auto;
+    margin: 13px auto;
   }
   &__go-back {
     position: absolute;
