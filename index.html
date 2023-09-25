@@ -12,10 +12,63 @@
     <link type="text/css" rel="stylesheet" href="./stylesheet/main.css" />
   </head>
   <body>
-    <!-- header -->
+    <!-- ************************************************************* header -->
     <header class="header">
       <h1 class="header__title">ohmyfood</h1>
+      <!-- <i class="fa-solid fa-arrow-left fa-2xl header__go-back"></i> -->
     </header>
-    <h2 class="test">Hello world</h2>
+    <main>
+      <!-- *********************************************************** infos -->
+      <form class="search-area">
+        <!-- future input ?? -->
+        <!-- For the moment, the input is not functional, but to avoid any errors in the code, it is coded but invisible to the user. -->
+        <!--  display none -->
+        <input type="text" class="search-area__input" />
+        <!-- Replaces input  -->
+        <p class="search-area__location important-content--bold">
+          <i class="fa-solid fa-location-dot"></i> Paris, Belleville
+        </p>
+        <div class="search-area__infos">
+          <h2>Réservez le menu qui vous convient</h2>
+          <label class="search-area__infos-label">
+            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+          </label>
+        </div>
+        <button type="submit" class="search-area__submit">
+          Explorer nos restaurants
+        </button>
+      </form>
+      <!-- *********************************************************** operating -->
+      <section class="operating">
+        <h2 class="operating__title section__title"></h2>
+        <div class="operating__process"></div>
+        <div class="operating__process"></div>
+        <div class="operating__process"></div>
+      </section>
+      <!-- *********************************************************** restaurants -->
+      <section class="restaurants">
+        <h2 class="restaurants__title section__title"></h2>
+        <div class="restaurants--cards-container">
+          <a href="#" class="restaurants__card"></a>
+          <a href="#" class="restaurants__card"></a>
+          <a href="#" class="restaurants__card"></a>
+          <a href="#" class="restaurants__card"></a>
+        </div>
+      </section>
+    </main>
+    <!-- *********************************************************** footer -->
+    <footer class="footer">
+      <div class="footer__links">
+        <div class="footer__links-container-actions">
+          <a href="#" class="footer__action-link"></a>
+          <a href="#" class="footer__action-link"></a>
+        </div>
+        <div class="footer__links-container-infos">
+          <a href="#" class="footer__info-link"></a>
+          <a href="#" class="footer__info-link"></a>
+        </div>
+      </div>
+      <div class="footer__logo"></div>
+    </footer>
   </body>
 </html>
