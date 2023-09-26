@@ -4,10 +4,6 @@ body {
   background: $bg-color-principal;
 }
 
-.link {
-  text-decoration: none;
-}
-
 p {
   margin: 0%;
 }
@@ -20,6 +16,6 @@ p {
     padding: 40px 20px;
   }
   &__title {
-    margin: 0%;
+    margin: 0;
   }
 }

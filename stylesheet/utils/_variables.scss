@@ -1,8 +1,4 @@
 // Colors
-$bg-color-principal: #f6f6f6;
-$bg-color-secondary: #ffffff;
-$bg-color-location: #eaeaea;
-$font-principale-color: black;
 $green-light: #99e2d0;
 $green-dark: #008766;
 $blue-light: #89c8fa;
@@ -10,17 +6,11 @@ $blue-dark: #003a68;
 $purple: #9356dc;
 $grey: #353535;
 $grey-light: #7e7e7e;
-$gradient-bg: linear-gradient(193deg, $purple -11.44%, #ff79da 123.93%);
-
-//!TODO
-/* Fonts */
-$section-title: 700 24px "Roboto", sans-serif;
-$paragraph: 300 18px "Roboto", sans-serif;
-$button: 500 16px "Roboto", sans-serif;
-$section-title-2: 500 18px "Roboto", sans-serif;
-$menu-plate-price: 700 15px "Roboto", sans-serif;
-$menu-plate-title: 500 18px "Roboto", sans-serif;
-$menu-plate-details: 300 15px "Roboto", sans-serif;
+$bg-color-principal: #f6f6f6;
+$bg-color-secondary: #ffffff;
+$bg-color-location: #eaeaea;
+$bg-gradient: linear-gradient(193deg, $purple -11.44%, #ff79da 123.93%);
+$font-principale-color: black;
 
 /* Effects */
 $shadow-badge-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);

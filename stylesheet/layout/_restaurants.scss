@@ -7,6 +7,7 @@ $num-restaurants: 4;
   }
   &__card {
     position: relative;
+    box-sizing: border-box;
     &-link {
       background-color: $bg-color-secondary;
       display: flex;
@@ -62,7 +63,7 @@ $num-restaurants: 4;
       }
       @for $i from 1 through $num-restaurants {
         #restaurants-heart--#{$i}:checked + label .heart {
-          background: $gradient-bg;
+          background: $bg-gradient;
         }
       }
     }
