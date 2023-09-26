@@ -4,41 +4,78 @@
 /* google font Shrikhand */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
+// general
 body {
   font-family: "Roboto", sans-serif;
   color: $font-principale-color;
 }
-
-h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0%;
-}
 p {
   font-size: 17px;
+  font-weight: 300;
 }
 .link {
   color: $font-principale-color;
+  text-decoration: none;
 }
+.p-emphase {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+// titles
 .header__title,
 .footer__title {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
 }
-
 .header__title {
   font-size: 30px;
 }
-
+.footer__title {
+  margin: 0;
+}
+.search-area__subtitle {
+  font-weight: 300;
+  color: $grey;
+}
 .section__title {
   font-size: 24px;
   font-weight: 700;
 }
+.restaurants__card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0%;
+}
 
-.important-content {
-  font-size: 16px;
-  font-weight: 400;
-  &--bold {
-    font-weight: 500;
+// buttons
+.btn {
+  color: $bg-color-secondary;
+  font: 500 1rem "Roboto", sans-serif;
+}
+
+// operating
+.operating__process {
+  &-icon {
+    color: $grey-light;
+    &--highlight {
+      color: $purple;
+    }
+  }
+  &-num {
+    font-size: 14px;
+    color: $bg-color-secondary;
+  }
+}
+
+// footer
+.footer {
+  color: $bg-color-secondary;
+  &__link {
+    color: $bg-color-secondary;
   }
 }
