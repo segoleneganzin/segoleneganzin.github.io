@@ -1,3 +1,5 @@
+/* Fonts */
+/* Effects */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
@@ -193,13 +195,16 @@ p {
   gap: 1rem;
 }
 .restaurants__card {
+  position: relative;
+}
+.restaurants__card-link {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   overflow: hidden;
 }
-.restaurants__card-img {
+.restaurants__card-link-img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center bottom;
@@ -208,38 +213,58 @@ p {
   max-height: 170px;
   width: 100%;
 }
-.restaurants__card-content {
+.restaurants__card-link-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 10px 25px 15px 15px;
 }
-.restaurants__card-content-txt {
+.restaurants__card-link-content-txt {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
 }
-.restaurants__card-content-heart {
-  margin-top: 5px;
-}
-.restaurants__card-content .heart {
-  font-size: 22px;
-}
-.restaurants__card-content #restaurant-heart--1:checked + label .heart {
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-}
-.restaurants__card-content #restaurant-heart--2:checked + label .heart {
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-}
-.restaurants__card-content #restaurant-heart--3:checked + label .heart {
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-}
-.restaurants__card-content #restaurant-heart--4:checked + label .heart {
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-}
-.restaurants__card:nth-child(2) .restaurants__card-img {
+.restaurants__card:nth-child(2) .restaurants__card-link-img {
   -o-object-position: 50% 61%;
      object-position: 50% 61%;
+}
+.restaurants__card--new::before {
+  content: "Nouveau";
+  font-size: 14px;
+  color: #008766;
+  font-weight: 500;
+  padding: 5px 10px;
+  position: absolute;
+  top: 10px;
+  left: 74%;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #99e2d0;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.restaurants__card-heart {
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  z-index: 99;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.restaurants__card-heart .heart {
+  font-size: 22px;
+}
+.restaurants__card-heart #restaurants-heart--1:checked + label .heart {
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+}
+.restaurants__card-heart #restaurants-heart--2:checked + label .heart {
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+}
+.restaurants__card-heart #restaurants-heart--3:checked + label .heart {
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+}
+.restaurants__card-heart #restaurants-heart--4:checked + label .heart {
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
 }
 
 .btn {

@@ -6,44 +6,64 @@ $num-restaurants: 4;
     gap: 1rem;
   }
   &__card {
-    background-color: $bg-color-secondary;
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    overflow: hidden;
-    &-img {
-      object-fit: cover;
-      object-position: center bottom;
-      align-self: stretch;
-      max-height: 170px;
-      width: 100%;
-    }
-
-    &-content {
+    position: relative;
+    &-link {
+      background-color: $bg-color-secondary;
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 10px 25px 15px 15px;
-      &-txt {
+      flex-direction: column;
+      border-radius: 15px;
+      overflow: hidden;
+      &-img {
+        object-fit: cover;
+        object-position: center bottom;
+        align-self: stretch;
+        max-height: 170px;
+        width: 100%;
+      }
+      &-content {
         display: flex;
-        flex-direction: column;
-        gap: 0.2rem;
-      }
-      &-heart {
-        margin-top: 5px;
-      }
-      .heart {
-        font-size: 22px;
-      }
-      @for $i from 1 through $num-restaurants {
-        #restaurant-heart--#{$i}:checked + label .heart {
-          background: $gradient-bg;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px 25px 15px 15px;
+        &-txt {
+          display: flex;
+          flex-direction: column;
+          gap: 0.2rem;
         }
       }
     }
     &:nth-child(2) {
-      .restaurants__card-img {
+      .restaurants__card-link-img {
         object-position: 50% 61%;
+      }
+    }
+    &--new::before {
+      content: "Nouveau";
+      font-size: 14px;
+      color: $green-dark;
+      font-weight: 500;
+      padding: 5px 10px;
+      position: absolute;
+      top: 10px;
+      left: 74%;
+      width: fit-content;
+      background-color: $green-light;
+      border-radius: 2px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+    &-heart {
+      position: absolute;
+      bottom: 30px;
+      right: 25px;
+      z-index: 99;
+      width: fit-content;
+      .heart {
+        font-size: 22px;
+      }
+      @for $i from 1 through $num-restaurants {
+        #restaurants-heart--#{$i}:checked + label .heart {
+          background: $gradient-bg;
+        }
       }
     }
   }
