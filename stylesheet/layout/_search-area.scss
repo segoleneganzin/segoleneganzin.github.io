@@ -11,6 +11,9 @@
     margin: 0;
     padding: 15px 0;
     background-color: $bg-color-location;
+    //!!TODO
+    z-index: -1;
+    cursor: pointer;
     i {
       padding-right: 10px;
     }
