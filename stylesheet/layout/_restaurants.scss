@@ -35,10 +35,6 @@ $num-restaurants: 4;
       .heart {
         font-size: 22px;
       }
-      // #heart:checked + label .heart {
-      //   background: $gradient-bg;
-      // }
-      // animation-direction: alternate;
       @for $i from 1 through $num-restaurants {
         #restaurant-heart--#{$i}:checked + label .heart {
           background: $gradient-bg;

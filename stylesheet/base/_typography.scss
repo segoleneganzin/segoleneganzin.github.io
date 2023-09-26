@@ -14,11 +14,11 @@ h3 {
   font-weight: 700;
   margin: 0%;
 }
-a {
-  color: $font-principale-color;
-}
 p {
   font-size: 17px;
+}
+.link {
+  color: $font-principale-color;
 }
 .header__title,
 .footer__title {
@@ -27,7 +27,7 @@ p {
 }
 
 .header__title {
-  font-size: $font-size-header-title;
+  font-size: 30px;
 }
 
 .section__title {
