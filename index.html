@@ -22,7 +22,9 @@
       <div class="search-area">
         <!-- future input here -->
         <!-- Replaces input  -->
-        <p class="search-area__location important-content--bold">
+        <p
+          class="search-area__location important-content important-content--bold"
+        >
           <i class="fa-solid fa-location-dot"></i> Paris, Belleville
         </p>
         <div class="search-area__titles">
@@ -35,7 +37,7 @@
         </div>
         <button
           type="submit"
-          class="btn search-area__submit important-content--bold"
+          class="btn search-area__submit important-content important-content--bold"
         >
           Explorer nos restaurants
         </button>
@@ -49,17 +51,23 @@
             <i
               class="fa-solid fa-mobile-screen-button operating__process-icon"
             ></i>
-            <p class="important-content--bold">Choisissez un restaurant</p>
+            <p class="important-content important-content--bold">
+              Choisissez un restaurant
+            </p>
           </div>
           <div class="operating__process">
             <p class="operating__process-num">2</p>
             <i class="fa-solid fa-list-ul operating__process-icon"></i>
-            <p class="important-content--bold">Composez votre menu</p>
+            <p class="important-content important-content--bold">
+              Composez votre menu
+            </p>
           </div>
           <div class="operating__process">
             <p class="operating__process-num">3</p>
             <i class="fa-solid fa-store operating__process-icon--highlight"></i>
-            <p class="important-content--bold">Dégustez au restaurant</p>
+            <p class="important-content important-content--bold">
+              Dégustez au restaurant
+            </p>
           </div>
         </div>
       </section>
@@ -80,9 +88,16 @@
                   <h3 class="restaurants__card-title">La palette du goût</h3>
                   <p class="restaurants__card-subtitle">Ménilmontant</p>
                 </div>
-                <i
-                  class="fa-regular fa-heart restaurants__card-content-heart heart"
-                ></i>
+                <div class="restaurants__card-content-heart">
+                  <input
+                    type="checkbox"
+                    id="restaurant-heart--1"
+                    class="hidden-input"
+                  />
+                  <label for="restaurant-heart--1">
+                    <i class="fa-regular fa-heart heart"></i>
+                  </label>
+                </div>
               </div>
             </article>
           </a>
@@ -99,9 +114,16 @@
                   <h3 class="restaurants__card-title">La note enchantée</h3>
                   <p class="restaurants__card-subtitle">Charonne</p>
                 </div>
-                <i
-                  class="fa-regular fa-heart restaurants__card-content-heart heart"
-                ></i>
+                <div class="restaurants__card-content-heart">
+                  <input
+                    type="checkbox"
+                    id="restaurant-heart--2"
+                    class="hidden-input"
+                  />
+                  <label for="restaurant-heart--2">
+                    <i class="fa-regular fa-heart heart"></i>
+                  </label>
+                </div>
               </div>
             </article>
           </a>
@@ -118,9 +140,16 @@
                   <h3 class="restaurants__card-title">&Agrave; la française</h3>
                   <p class="restaurants__card-subtitle">Cité Rouge</p>
                 </div>
-                <i
-                  class="fa-regular fa-heart restaurants__card-content-heart heart"
-                ></i>
+                <div class="restaurants__card-content-heart">
+                  <input
+                    type="checkbox"
+                    id="restaurant-heart--3"
+                    class="hidden-input"
+                  />
+                  <label for="restaurant-heart--3">
+                    <i class="fa-regular fa-heart heart"></i>
+                  </label>
+                </div>
               </div>
             </article>
           </a>
@@ -137,9 +166,16 @@
                   <h3 class="restaurants__card-title">Le délice des sens</h3>
                   <p class="restaurants__card-subtitle">Folie-Méricourt</p>
                 </div>
-                <i
-                  class="fa-regular fa-heart restaurants__card-content-heart heart"
-                ></i>
+                <div class="restaurants__card-content-heart">
+                  <input
+                    type="checkbox"
+                    id="restaurant-heart--4"
+                    class="hidden-input"
+                  />
+                  <label for="restaurant-heart--4">
+                    <i class="fa-regular fa-heart heart"></i>
+                  </label>
+                </div>
               </div>
             </article>
           </a>

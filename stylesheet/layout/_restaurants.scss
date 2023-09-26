@@ -1,3 +1,4 @@
+$num-restaurants: 4;
 .restaurants {
   &__cards-container {
     display: flex;
@@ -8,20 +9,46 @@
     background-color: $bg-color-secondary;
     display: flex;
     flex-direction: column;
-    height: 250px;
     border-radius: 15px;
+    overflow: hidden;
     &-img {
       object-fit: cover;
-      box-sizing: border-box;
+      object-position: center bottom;
       align-self: stretch;
-      max-height: 160px;
+      max-height: 170px;
       width: 100%;
     }
+
     &-content {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 15px;
+      align-items: flex-start;
+      padding: 10px 25px 15px 15px;
+      &-txt {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+      &-heart {
+        margin-top: 5px;
+      }
+      .heart {
+        font-size: 22px;
+      }
+      // #heart:checked + label .heart {
+      //   background: $gradient-bg;
+      // }
+      // animation-direction: alternate;
+      @for $i from 1 through $num-restaurants {
+        #restaurant-heart--#{$i}:checked + label .heart {
+          background: $gradient-bg;
+        }
+      }
+    }
+    &:nth-child(2) {
+      .restaurants__card-img {
+        object-position: 50% 61%;
+      }
     }
   }
 }
