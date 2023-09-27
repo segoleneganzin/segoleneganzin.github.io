@@ -52,18 +52,29 @@ $num-restaurants: 4;
       border-radius: 2px;
       box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     }
-    &-heart {
+    .fa-heart {
       position: absolute;
       bottom: 30px;
       right: 25px;
       z-index: 99;
       width: fit-content;
-      .heart {
-        font-size: 22px;
+      font-size: 22px;
+    }
+    .heart {
+      &--like {
+        opacity: 0;
+        @include text-gradient;
       }
-      @for $i from 1 through $num-restaurants {
-        #restaurants-heart--#{$i}:checked + label .heart {
-          background: $bg-gradient;
+    }
+    @for $i from 1 through $num-restaurants {
+      #restaurants-heart--#{$i}:checked + label {
+        .heart {
+          &--unlike {
+            opacity: 0;
+          }
+          &--like {
+            opacity: 1;
+          }
         }
       }
     }
