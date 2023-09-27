@@ -1,0 +1,5 @@
+@mixin text-gradient {
+  background: -webkit-linear-gradient(100deg, #ff79da -11.44%, #9356dc 123.93%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

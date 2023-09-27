@@ -256,28 +256,45 @@ p {
   border-radius: 2px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.restaurants__card-heart {
+.restaurants__card .fa-heart {
   position: absolute;
   bottom: 30px;
   right: 25px;
   z-index: 99;
   width: -moz-fit-content;
   width: fit-content;
-}
-.restaurants__card-heart .heart {
   font-size: 22px;
 }
-.restaurants__card-heart #restaurants-heart--1:checked + label .heart {
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+.restaurants__card .heart--like {
+  opacity: 0;
+  background: -webkit-linear-gradient(100deg, #ff79da -11.44%, #9356dc 123.93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.restaurants__card-heart #restaurants-heart--2:checked + label .heart {
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+.restaurants__card #restaurants-heart--1:checked + label .heart--unlike {
+  opacity: 0;
 }
-.restaurants__card-heart #restaurants-heart--3:checked + label .heart {
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+.restaurants__card #restaurants-heart--1:checked + label .heart--like {
+  opacity: 1;
 }
-.restaurants__card-heart #restaurants-heart--4:checked + label .heart {
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+.restaurants__card #restaurants-heart--2:checked + label .heart--unlike {
+  opacity: 0;
+}
+.restaurants__card #restaurants-heart--2:checked + label .heart--like {
+  opacity: 1;
+}
+.restaurants__card #restaurants-heart--3:checked + label .heart--unlike {
+  opacity: 0;
+}
+.restaurants__card #restaurants-heart--3:checked + label .heart--like {
+  opacity: 1;
+}
+.restaurants__card #restaurants-heart--4:checked + label .heart--unlike {
+  opacity: 0;
+}
+.restaurants__card #restaurants-heart--4:checked + label .heart--like {
+  opacity: 1;
 }
 
 .btn {
