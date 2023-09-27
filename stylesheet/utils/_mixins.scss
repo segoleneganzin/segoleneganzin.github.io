@@ -1,5 +1,16 @@
+// buttons
+@mixin pseudo-elem {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// heart like element
 @mixin text-gradient {
-  background: -webkit-linear-gradient(100deg, #ff79da -11.44%, #9356dc 123.93%);
+  background: $bg-heart-gradient;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

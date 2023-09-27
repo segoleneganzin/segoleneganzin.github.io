@@ -1,4 +1,3 @@
-$num-restaurants: 4;
 .restaurants {
   &__cards-container {
     display: flex;
@@ -63,7 +62,12 @@ $num-restaurants: 4;
     .heart {
       &--like {
         opacity: 0;
+        transform: scale(0);
+        transition: transform 200ms;
         @include text-gradient;
+      }
+      &--unlike {
+        transition: opacity 200ms;
       }
     }
     @for $i from 1 through $num-restaurants {
@@ -74,6 +78,7 @@ $num-restaurants: 4;
           }
           &--like {
             opacity: 1;
+            transform: scale(1);
           }
         }
       }
