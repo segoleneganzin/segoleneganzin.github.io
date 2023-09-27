@@ -139,6 +139,8 @@ p {
   display: flex;
   gap: 8px;
   align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .search-area {
@@ -267,42 +269,86 @@ p {
 }
 .restaurants__card .heart--like {
   opacity: 0;
-  background: -webkit-linear-gradient(100deg, #ff79da -11.44%, #9356dc 123.93%);
+  transform: scale(0);
+  transition: transform 200ms;
+  background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.restaurants__card .heart--unlike {
+  transition: opacity 200ms;
 }
 .restaurants__card #restaurants-heart--1:checked + label .heart--unlike {
   opacity: 0;
 }
 .restaurants__card #restaurants-heart--1:checked + label .heart--like {
   opacity: 1;
+  transform: scale(1);
 }
 .restaurants__card #restaurants-heart--2:checked + label .heart--unlike {
   opacity: 0;
 }
 .restaurants__card #restaurants-heart--2:checked + label .heart--like {
   opacity: 1;
+  transform: scale(1);
 }
 .restaurants__card #restaurants-heart--3:checked + label .heart--unlike {
   opacity: 0;
 }
 .restaurants__card #restaurants-heart--3:checked + label .heart--like {
   opacity: 1;
+  transform: scale(1);
 }
 .restaurants__card #restaurants-heart--4:checked + label .heart--unlike {
   opacity: 0;
 }
 .restaurants__card #restaurants-heart--4:checked + label .heart--like {
   opacity: 1;
+  transform: scale(1);
 }
 
 .btn {
+  position: relative;
   padding: 13px 20px;
   border-radius: 25px;
   border: none;
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  cursor: pointer;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 25px;
+  background: linear-gradient(0deg, #9e67e0 0%, #ff8de0 100%);
+  transition: opacity 200ms ease-in;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  transition: opacity 200ms ease-in;
+}
+.btn:hover::before {
+  opacity: 1;
+}
+.btn:hover::after {
+  opacity: 1;
 }
 
 .hidden-input {
