@@ -89,6 +89,7 @@ p {
 }
 
 .header {
+  position: relative;
   background-color: #ffffff;
   width: 100%;
   display: flex;
@@ -101,8 +102,9 @@ p {
 }
 .header__go-back {
   position: absolute;
-  left: 7%;
-  top: 8%;
+  left: 5%;
+  top: 48%;
+  color: black;
 }
 
 .footer {
