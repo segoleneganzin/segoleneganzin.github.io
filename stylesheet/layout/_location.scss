@@ -10,3 +10,12 @@
     padding-right: 10px;
   }
 }
+
+@media screen and (min-width: 1441px) {
+  .location {
+    width: fit-content;
+    margin: auto;
+    border-radius: 0 0 $box-border-radius $box-border-radius;
+    padding: 15px 50px;
+  }
+}

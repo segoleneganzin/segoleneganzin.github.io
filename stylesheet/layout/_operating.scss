@@ -2,8 +2,8 @@
   background-color: $bg-color-secondary;
   &__process {
     background-color: $bg-color-principal;
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: $box-border-radius;
+    box-shadow: $operatings-box-shadow;
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -17,13 +17,16 @@
       position: relative;
       left: -10px;
       background-color: $purple;
-      border-radius: 100%;
+      border-radius: $circle-border-radius;
     }
     &-container {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
       margin-left: 8px;
     }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .operating__process {
+    flex-basis: 33%;
   }
 }

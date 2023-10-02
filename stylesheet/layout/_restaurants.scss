@@ -1,9 +1,4 @@
 .restaurants {
-  &__cards-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
   &__card {
     position: relative;
     box-sizing: border-box;
@@ -11,13 +6,12 @@
       background-color: $bg-color-secondary;
       display: flex;
       flex-direction: column;
-      border-radius: 15px;
+      border-radius: $box-border-radius;
       overflow: hidden;
       &-img {
         object-fit: cover;
         object-position: center bottom;
-        align-self: stretch;
-        max-height: 170px;
+        height: 170px;
         width: 100%;
       }
       &-content {
@@ -45,11 +39,32 @@
       padding: 5px 10px;
       position: absolute;
       top: 10px;
-      left: 74%;
+      right: 2%;
       width: fit-content;
       background-color: $green-light;
       border-radius: 2px;
-      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: $card-box-shadow;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants__card-link-img {
+    height: 231px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    &__cards-container {
+      flex-wrap: wrap;
+      gap: 2.2rem;
+    }
+    &__card {
+      flex-basis: 48%;
+      &-link-img {
+        object-position: 50% 80%;
+      }
     }
   }
 }
