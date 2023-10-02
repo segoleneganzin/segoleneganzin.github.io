@@ -1,9 +1,4 @@
 .restaurants {
-  &__cards-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
   &__card {
     position: relative;
     box-sizing: border-box;
@@ -11,13 +6,12 @@
       background-color: $bg-color-secondary;
       display: flex;
       flex-direction: column;
-      border-radius: 15px;
+      border-radius: $box-border-radius;
       overflow: hidden;
       &-img {
         object-fit: cover;
         object-position: center bottom;
-        align-self: stretch;
-        max-height: 170px;
+        height: 170px;
         width: 100%;
       }
       &-content {
@@ -45,42 +39,31 @@
       padding: 5px 10px;
       position: absolute;
       top: 10px;
-      left: 74%;
+      right: 2%;
       width: fit-content;
       background-color: $green-light;
       border-radius: 2px;
-      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: $card-box-shadow;
     }
-    .fa-heart {
-      position: absolute;
-      bottom: 30px;
-      right: 25px;
-      z-index: 99;
-      width: fit-content;
-      font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants__card-link-img {
+    height: 231px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    &__cards-container {
+      flex-wrap: wrap;
+      gap: 2.2rem;
     }
-    .heart {
-      &--like {
-        opacity: 0;
-        transform: scale(0);
-        transition: transform 200ms;
-        @include text-gradient;
-      }
-      &--unlike {
-        transition: opacity 200ms;
-      }
-    }
-    @for $i from 1 through $num-restaurants {
-      #restaurants-heart--#{$i}:checked + label {
-        .heart {
-          &--unlike {
-            opacity: 0;
-          }
-          &--like {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
+    &__card {
+      flex-basis: 48%;
+      &-link-img {
+        object-position: 50% 80%;
       }
     }
   }

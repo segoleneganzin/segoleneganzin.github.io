@@ -14,18 +14,19 @@
   <!-- ************************************************************* header -->
   <header class="header">
     <h2 class="header__title">ohmyfood</h2>
-    <!-- <i class="fa-solid fa-arrow-left fa-2xl header__go-back"></i> -->
   </header>
-  <main>
-    <!-- *********************************************************** search area -->
-    <div class="search-area">
-      <!-- future input here -->
-      <!-- Replaces input  -->
-      <p class="search-area__location p-emphase bold">
+  <!-- ************************************************************* main -->
+  <main class="homepage">
+    <!-- ************************************************************* location -->
+    <div class="location">
+      <p class="p-emphase bold">
         <i class="fa-solid fa-location-dot"></i> Paris, Belleville
       </p>
+    </div>
+    <!-- *********************************************************** search area -->
+    <section class="search-area section">
       <div class="search-area__titles">
-        <h1 class="section__title search-area__title">
+        <h1 class="search-area__title section__title">
           Réservez le menu qui vous convient
         </h1>
         <p class="search-area__subtitle">
@@ -35,11 +36,11 @@
       <a href="#restaurants" class="btn search-area__submit link">
         Explorer nos restaurants
       </a>
-    </div>
+    </section>
     <!-- *********************************************************** operating -->
-    <section class="operating section__container">
+    <section class="operating section">
       <h2 class="operating__title section__title">Fonctionnement</h2>
-      <div class="operating__process-container">
+      <div class="operating__process-container section__content">
         <div class="operating__process">
           <p class="operating__process-num bold">1</p>
           <i class="fa-solid fa-mobile-screen-button operating__process-icon"></i>
@@ -64,12 +65,12 @@
       </div>
     </section>
     <!-- *********************************************************** restaurants -->
-    <section class="restaurants section__container" id="restaurants">
+    <section class="restaurants section" id="restaurants">
       <h2 class="restaurants__title section__title">Restaurants</h2>
-      <div class="restaurants__cards-container">
+      <div class="restaurants__cards-container section__content">
         <!-- one restaurant (1)-->
         <article class="restaurants__card restaurants__card--new">
-          <a href="#restaurants" class="restaurants__card-link link">
+          <a href="./restaurants/la-palette-du-gout.html" class="restaurants__card-link link">
             <img src="assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
               alt="photo d'un plat du restaurant" class="restaurants__card-link-img">
             <div class="restaurants__card-link-content">
@@ -89,7 +90,7 @@
         </article>
         <!-- one restaurant (2)-->
         <article class="restaurants__card restaurants__card--new">
-          <a href="#restaurants" class="restaurants__card-link link">
+          <a href="./restaurants/la-note-enchantee.html" class="restaurants__card-link link">
             <img src="assets/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo d'un plat du restaurant"
               class="restaurants__card-link-img">
             <div class="restaurants__card-link-content">
@@ -109,7 +110,7 @@
         </article>
         <!-- one restaurant (3)-->
         <article class="restaurants__card">
-          <a href="#restaurants" class="restaurants__card-link link">
+          <a href="./restaurants/a-la-francaise.html" class="restaurants__card-link link">
             <img src="assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'un plat du restaurant"
               class="restaurants__card-link-img">
             <div class="restaurants__card-link-content">
@@ -129,7 +130,7 @@
         </article>
         <!-- one restaurant (4)-->
         <article class="restaurants__card">
-          <a href="#restaurants" class="restaurants__card-link link">
+          <a href="./restaurants/le-delice-des-sens.html" class="restaurants__card-link link">
             <img src="assets/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
               alt="photo d'un plat du restaurant" class="restaurants__card-link-img">
             <div class="restaurants__card-link-content">

@@ -1,4 +1,4 @@
-// Colors
+/* Colors */
 $green-light: #99e2d0;
 $green-dark: #008766;
 $blue-light: #89c8fa;
@@ -10,26 +10,34 @@ $pink-light: lighten($pink, 4%);
 $grey: #353535;
 $grey-light: #7e7e7e;
 
-// background color
+/* Background color */
 $bg-color-principal: #f6f6f6;
 $bg-color-secondary: #ffffff;
 $bg-color-location: #eaeaea;
+$bg-heart-gradient: linear-gradient(0deg, $pink 0%, #9356dc 100%);
+
+/* Font colors */
+$font-principale-color: black;
+
+/* Borders */
+$box-border-radius: 15px;
+$btn-border-radius: 25px;
+$circle-border-radius: 100%;
+
+/* Shadows */
+$header-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+$card-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+$operatings-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+/* Buttons */
 $bg-btn-gradient: linear-gradient(0deg, $purple 0%, $pink 100%);
 $bg-btn-gradient-lighten: linear-gradient(
   0deg,
   $purple-light 0%,
   $pink-light 100%
 );
-$bg-heart-gradient: linear-gradient(0deg, $pink 0%, #9356dc 100%);
+$btn-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$btn-box-shadow-hover: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
 
-// font color
-$font-principale-color: black;
-
-/* Effects */
-// $shadow-badge-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-// $shadow-card-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-// $shadow-button-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-// $shadow-instructions-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-
-// restaurants
-$num-restaurants: 4; // can be modified via js
+/* Restaurants */
+$num-restaurants: 4; // used for heart like / can be modified via js

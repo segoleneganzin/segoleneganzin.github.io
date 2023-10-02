@@ -35,10 +35,8 @@ p {
 .header__title {
   font-size: 30px;
 }
-.footer__title {
-  margin: 0;
-}
 .search-area__subtitle {
+  font-size: 18px;
   font-weight: 300;
   color: $grey;
 }
@@ -49,7 +47,6 @@ p {
 .restaurants__card-title {
   font-size: 18px;
   font-weight: 700;
-  margin: 0%;
 }
 
 // buttons

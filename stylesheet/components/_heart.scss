@@ -1,0 +1,39 @@
+.heart {
+  &--like {
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 200ms;
+    @include text-gradient;
+  }
+  &--unlike {
+    transition: opacity 200ms;
+  }
+}
+
+// ******************************* homepage restaurants section
+.restaurants {
+  .fa-heart {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    z-index: 99;
+    width: fit-content;
+    font-size: 22px;
+  }
+
+  @for $i from 1 through $num-restaurants {
+    #restaurants-heart--#{$i}:checked + label {
+      .heart {
+        &--unlike {
+          opacity: 0;
+        }
+        &--like {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+// ******************************* menu
