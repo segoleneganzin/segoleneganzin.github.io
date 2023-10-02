@@ -28,7 +28,8 @@ p {
 
 // titles
 .header__title,
-.footer__title {
+.footer__title,
+.menu__header-title {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
 }
@@ -47,6 +48,27 @@ p {
 .restaurants__card-title {
   font-size: 18px;
   font-weight: 700;
+}
+.menu {
+  &__header-title {
+    font-size: 28px;
+  }
+  &__choices-title {
+    font-size: 16px;
+  }
+  &__dish {
+    &-name {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    &-description {
+      font-size: 15px;
+    }
+    &-price {
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
 }
 
 // buttons
