@@ -129,7 +129,7 @@ p {
   }
 }
 @media screen and (min-width: 1441px) {
-  .section__content {
+  .section {
     border-radius: 15px;
   }
 }
