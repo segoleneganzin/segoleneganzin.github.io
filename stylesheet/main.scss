@@ -5,17 +5,17 @@
 @import "base/normalize";
 @import "base/typography";
 
-@import "components/section";
 @import "components/buttons";
 @import "components/inputs";
 @import "components/heart";
 
 @import "layout/header";
 @import "layout/footer";
-@import "layout/location";
-@import "layout/search-area";
-@import "layout/operating";
-@import "layout/restaurants";
+@import "layout/home-location";
+@import "layout/home-search-area";
+@import "layout/home-operating";
+@import "layout/home-restaurants";
+@import "layout/restaurant-menu";
 
 @import "pages/home";
-@import "pages/menu";
+@import "pages/restaurant";
