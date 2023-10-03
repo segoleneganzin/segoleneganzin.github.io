@@ -1,0 +1,106 @@
+.menu {
+  position: relative;
+  top: -60px;
+  background-color: $bg-color-principal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  border-radius: $menu-border-radius $menu-border-radius 0 0;
+  padding: 40px 10px 0 10px;
+  &__header {
+    position: relative;
+    left: -22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    &-title {
+      margin: 0;
+    }
+    &-heart {
+      position: relative;
+      top: -13px;
+      left: 20px;
+    }
+  }
+  &__choices {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0%;
+    &-title {
+      margin-bottom: 15px;
+      //   !TODO
+      // &::after {
+      //   content: "";
+      //   width: 40px;
+      //   height: 3px;
+      //   background-color: $green-light;
+      //   position: relative;
+      //   top: 20px;
+      //   left: 0px;
+      // }
+    }
+  }
+  &__dish {
+    position: relative;
+    background-color: $bg-color-secondary;
+    padding: 15px;
+    border-radius: $box-border-radius;
+    box-shadow: $item-box-shadow;
+    overflow: hidden;
+    width: 85vw;
+    &-name {
+      line-height: 1.6rem;
+      display: block;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    &-description {
+      display: block;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 88%;
+    }
+    &-price {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      background-color: $bg-color-secondary;
+    }
+    &-check {
+      transform: scale(0);
+      color: $bg-color-secondary;
+      background-color: $green-light;
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      height: 100%;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__order-btn {
+    padding: 15px 40px;
+  }
+}
+
+@for $i from 1 through $num-dish {
+  #menu-dish--#{$i}:checked + label > .menu__dish-check {
+    transform: scale(1);
+  }
+  #menu-dish--#{$i}:checked + label > .menu__dish-name,
+  #menu-dish--#{$i}:checked + label > .menu__dish-description {
+    width: 69%;
+  }
+  #menu-dish--#{$i}:checked + label > .menu__dish-price {
+    transform: translate(-50px);
+  }
+}
