@@ -1,8 +1,8 @@
 /* Colors */
 $green-light: #99e2d0;
 $green-dark: #008766;
-$blue-light: #89c8fa;
-$blue-dark: #003a68;
+// $blue-light: #89c8fa;
+// $blue-dark: #003a68;
 $purple: #9356dc;
 $purple-light: lighten($purple, 4%);
 $pink: #ff79da;
@@ -44,7 +44,7 @@ $btn-box-shadow-hover: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
 $num-restaurants: 4; // used for heart like / can be modified via js
 
 /* Menu */
-$num-dish: 9;
+$num-dish: 10; // max of all restaurants (not best practice but with js and DB we can avoid that by mapping and set the good value of each restauarants)
 $appearing-dur: 1.2s;
 $appearing-main-courses-delay: $appearing-dur - 0.5s;
 $appearing-desserts-delay: $appearing-dur + $appearing-dur - 1s;

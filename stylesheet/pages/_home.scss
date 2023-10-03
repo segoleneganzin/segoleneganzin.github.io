@@ -3,6 +3,10 @@
 // layout/home-operating
 // layout/home-restaurants
 // this page is an overlay of sections
+.homepage main {
+  max-width: 1440px;
+  margin: auto;
+}
 .home__section {
   display: flex;
   flex-direction: column;

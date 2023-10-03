@@ -19,11 +19,6 @@ p {
   margin: 0;
 }
 
-.homepage {
-  max-width: 1440px;
-  margin: auto;
-}
-
 /****** Imports ***********/
 /* google font Roboto */
 /* google font Shrikhand */
@@ -75,7 +70,7 @@ p {
 .menu__header-title {
   font-size: 28px;
 }
-.menu__choices-title {
+.menu__part-title {
   font-size: 16px;
   font-weight: 300;
 }
@@ -480,7 +475,7 @@ p {
 .menu .desserts {
   animation: appearing 1.2s ease-in-out 1.4s forwards;
 }
-.menu__choices {
+.menu__part {
   opacity: 0;
   border: none;
   display: flex;
@@ -489,13 +484,13 @@ p {
   gap: 0.8rem;
   padding: 0%;
 }
-.menu__choices-title {
+.menu__part-title {
   position: relative;
   padding-left: 0%;
   padding-bottom: 15px;
   margin-bottom: 5px;
 }
-.menu__choices-title::after {
+.menu__part-title::after {
   content: "";
   width: 40px;
   height: 3px;
@@ -505,6 +500,7 @@ p {
   left: 0px;
 }
 .menu__dish {
+  cursor: pointer;
   position: relative;
   background-color: #ffffff;
   padding: 15px;
@@ -719,6 +715,24 @@ p {
   animation: expand-txt 0.2s ease-in-out forwards;
 }
 
+#menu-dish--10:checked + label > .menu__dish-check {
+  transform: scaleX(1);
+}
+
+#menu-dish--10:checked + label > .menu__dish-price {
+  transform: translate(-50px);
+}
+
+#menu-dish--10:checked + label > .menu__dish-name,
+#menu-dish--10:checked + label > .menu__dish-description {
+  animation: reduce-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--10:not(:checked) + label > .menu__dish-name,
+#menu-dish--10:not(:checked) + label > .menu__dish-description {
+  animation: expand-txt 0.2s ease-in-out forwards;
+}
+
 @keyframes appearing {
   0% {
     opacity: 0;
@@ -754,6 +768,11 @@ p {
     width: 65vw;
   }
 }
+.homepage main {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .home__section {
   display: flex;
   flex-direction: column;
