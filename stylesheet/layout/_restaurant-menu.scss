@@ -7,7 +7,9 @@
   align-items: center;
   gap: 2.5rem;
   border-radius: $menu-border-radius $menu-border-radius 0 0;
-  padding: 40px 10px 0 10px;
+  padding: 40px 10px 40px 10px;
+  max-width: 1024px;
+  margin: auto;
   &__header {
     position: relative;
     left: -22px;
@@ -24,7 +26,21 @@
       left: 20px;
     }
   }
+  // progressive appearing of menu parts
+  .starters {
+    animation: appearing $appearing-dur ease-in-out forwards;
+  }
+  .main-courses {
+    animation: appearing $appearing-dur ease-in-out
+      $appearing-main-courses-delay forwards;
+  }
+  .desserts {
+    animation: appearing $appearing-dur ease-in-out $appearing-desserts-delay
+      forwards;
+  }
+  // menu parts
   &__choices {
+    opacity: 0;
     border: none;
     display: flex;
     flex-direction: column;
@@ -32,17 +48,19 @@
     gap: 0.8rem;
     padding: 0%;
     &-title {
-      margin-bottom: 15px;
-      //   !TODO
-      // &::after {
-      //   content: "";
-      //   width: 40px;
-      //   height: 3px;
-      //   background-color: $green-light;
-      //   position: relative;
-      //   top: 20px;
-      //   left: 0px;
-      // }
+      position: relative;
+      padding-left: 0%;
+      padding-bottom: 15px;
+      margin-bottom: 5px;
+      &::after {
+        content: "";
+        width: 40px;
+        height: 3px;
+        background-color: $green-light;
+        position: absolute;
+        top: 25px;
+        left: 0px;
+      }
     }
   }
   &__dish {
@@ -53,6 +71,7 @@
     box-shadow: $item-box-shadow;
     overflow: hidden;
     width: 85vw;
+    max-width: 600px;
     &-name {
       line-height: 1.6rem;
       display: block;
@@ -74,7 +93,6 @@
       background-color: $bg-color-secondary;
     }
     &-check {
-      transform: scale(0);
       color: $bg-color-secondary;
       background-color: $green-light;
       position: absolute;
@@ -85,6 +103,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      transform: scaleX(0);
+      transform-origin: right;
     }
   }
   &__order-btn {
@@ -92,15 +112,65 @@
   }
 }
 
+// select dish animation
+.menu__dish-price,
+.menu__dish-check {
+  transition: transform $check-delay, width $check-delay;
+}
 @for $i from 1 through $num-dish {
   #menu-dish--#{$i}:checked + label > .menu__dish-check {
-    transform: scale(1);
-  }
-  #menu-dish--#{$i}:checked + label > .menu__dish-name,
-  #menu-dish--#{$i}:checked + label > .menu__dish-description {
-    width: 69%;
+    transform: scaleX(1);
   }
   #menu-dish--#{$i}:checked + label > .menu__dish-price {
     transform: translate(-50px);
+  }
+  #menu-dish--#{$i}:checked + label > .menu__dish-name,
+  #menu-dish--#{$i}:checked + label > .menu__dish-description {
+    animation: reduce-txt 0.2s ease-in-out forwards;
+  }
+  #menu-dish--#{$i}:not(:checked) + label > .menu__dish-name,
+  #menu-dish--#{$i}:not(:checked) + label > .menu__dish-description {
+    animation: expand-txt 0.2s ease-in-out forwards;
+  }
+}
+
+// Menu parts
+@keyframes appearing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+// check dish txt animations
+@keyframes reduce-txt {
+  20% {
+    width: 84.2%;
+  }
+  50% {
+    width: 78.5%;
+  }
+  100% {
+    width: 69%;
+  }
+}
+@keyframes expand-txt {
+  0% {
+    width: 69%;
+  }
+  50% {
+    width: 78.5%;
+  }
+  100% {
+    width: 88%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    &__dish {
+      width: 65vw;
+    }
   }
 }

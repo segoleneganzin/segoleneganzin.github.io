@@ -13,20 +13,17 @@ p {
   font-size: 17px;
   font-weight: 300;
 }
+.p-emphase {
+  font-size: 16px;
+}
 .fa-solid,
 .fa-regular {
   font-size: 22px;
 }
-
 .link {
   color: $font-principale-color;
   text-decoration: none;
 }
-.p-emphase {
-  font-size: 16px;
-  font-weight: 400;
-}
-
 .bold {
   font-weight: 500;
 }
@@ -45,14 +42,6 @@ p {
   font-size: 18px;
   font-weight: 300;
   color: $grey;
-}
-.section__title {
-  font-size: 24px;
-  font-weight: 700;
-}
-.restaurants__card-title {
-  font-size: 18px;
-  font-weight: 700;
 }
 .menu {
   &__header-title {
@@ -73,7 +62,6 @@ p {
       font-weight: 300;
     }
     &-price {
-      font-size: 15px;
       font-weight: 700;
     }
   }
@@ -107,5 +95,19 @@ p {
   }
   .fa-handshake-angle {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu__dish {
+    &-name {
+      font-size: 16px;
+    }
+    &-description {
+      font-size: 12px;
+    }
+    &-price {
+      font-size: 13px;
+    }
   }
 }

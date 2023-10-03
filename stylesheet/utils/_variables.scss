@@ -45,3 +45,7 @@ $num-restaurants: 4; // used for heart like / can be modified via js
 
 /* Menu */
 $num-dish: 9;
+$appearing-dur: 1.2s;
+$appearing-main-courses-delay: $appearing-dur - 0.5s;
+$appearing-desserts-delay: $appearing-dur + $appearing-dur - 1s;
+$check-delay: 0.5s;
