@@ -10,17 +10,107 @@
     <link type="text/css" rel="stylesheet" href="../stylesheet/main.css">
 </head>
 
-<body>
+<body class="restaurant-page">
     <!-- ************************************************************* header -->
     <header class="header">
         <h2 class="header__title">ohmyfood</h2>
         <a href="../index.html"><i class="fa-solid fa-arrow-left fa-2xl header__go-back"></i></a>
     </header>
     <!-- ************************************************************* main -->
-    <main class="menu">
+    <main>
+        <img src="../assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'un plat du restaurant"
+            class="restaurant-page__img">
+        <div class="menu">
+            <div class="menu__header">
+                <h1 class="menu__header-title">À la française</h1>
+                <div class="menu__header-heart">
+                    <input type="checkbox" id="menu-heart" class="hidden-input">
+                    <label for="menu-heart">
+                        <i class="fa-regular fa-heart heart--unlike"></i>
+                        <i class="fa-solid fa-heart heart--like"></i>
+                    </label>
+                </div>
+            </div>
+            <!-- Starters -->
+            <fieldset class="menu__part starters">
+                <legend class="menu__part-title">ENTR&Eacute;ES</legend>
+                <input type="checkbox" id="menu-dish--1" class="hidden-input">
+                <label for="menu-dish--1" class="menu__dish">
+                    <span class="menu__dish-name">Tartare de poulpe acidulé</span>
+                    <span class="menu__dish-description">Aux zestes d'orange</span>
+                    <span class="menu__dish-price">25€</span>
+                    <span class="menu__dish-check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+                <input type="checkbox" id="menu-dish--2" class="hidden-input">
+                <label for="menu-dish--2" class="menu__dish">
+                    <span class="menu__dish-name">Velouté de légumes d'antan</span>
+                    <span class="menu__dish-description">Carotte, panais, topinambour</span>
+                    <span class="menu__dish-price">35€</span>
+                    <span class="menu__dish-check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+                <input type="checkbox" id="menu-dish--3" class="hidden-input">
+                <label for="menu-dish--3" class="menu__dish">
+                    <span class="menu__dish-name">Soupe à l'oignon</span>
+                    <span class="menu__dish-description">Revisitée</span>
+                    <span class="menu__dish-price">20€</span>
+                    <span class="menu__dish-check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+            </fieldset>
+            <!-- Main courses -->
+            <fieldset class="menu__part main-courses">
+                <legend class="menu__part-title">PLATS</legend>
+                <input type="checkbox" id="menu-dish--4" class="hidden-input">
+                <label for="menu-dish--4" class="menu__dish">
+                    <span class="menu__dish-name">Coquilles Saint-Jacques</span>
+                    <span class="menu__dish-description">Accompagnées d'une purée de panais</span>
+                    <span class="menu__dish-price">40€</span>
+                    <span class="menu__dish-check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+                <input type="checkbox" id="menu-dish--5" class="hidden-input">
+                <label for="menu-dish--5" class="menu__dish">
+                    <span class="menu__dish-name">Magret de canard</span>
+                    <span class="menu__dish-description">Et parmentier de pommes de terre</span>
+                    <span class="menu__dish-price">35€</span>
+                    <span class="menu__dish-check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+                <input type="checkbox" id="menu-dish--6" class="hidden-input">
+                <label for="menu-dish--6" class="menu__dish">
+                    <span class="menu__dish-name">Pigeonneau d’Ille-et-Vilaine</span>
+                    <span class="menu__dish-description">Sur son lit de gnocchis aux légumes</span>
+                    <span class="menu__dish-price">44€</span>
+                    <span class="menu__dish-check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+            </fieldset>
+            <!-- Desserts -->
+            <fieldset class="menu__part desserts">
+                <legend class="menu__part-title">DESSERTS</legend>
+                <input type="checkbox" id="menu-dish--7" class="hidden-input">
+                <label for="menu-dish--7" class="menu__dish">
+                    <span class="menu__dish-name">Pétales de violettes glacés</span>
+                    <span class="menu__dish-description">Et purée de noisettes</span>
+                    <span class="menu__dish-price">18€</span>
+                    <span class="menu__dish-check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+                <input type="checkbox" id="menu-dish--8" class="hidden-input">
+                <label for="menu-dish--8" class="menu__dish">
+                    <span class="menu__dish-name">Fondant au chocolat</span>
+                    <span class="menu__dish-description">Revisité</span>
+                    <span class="menu__dish-price">22€</span>
+                    <span class="menu__dish-check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+                <input type="checkbox" id="menu-dish--9" class="hidden-input">
+                <label for="menu-dish--9" class="menu__dish">
+                    <span class="menu__dish-name">Millefeuille croustillant</span>
+                    <span class="menu__dish-description">Myrtilles et pâte d’amande</span>
+                    <span class="menu__dish-price">23€</span>
+                    <span class="menu__dish-check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+            </fieldset>
+            <button class="btn menu__order-btn">Commander</button>
+        </div>
     </main>
     <!-- *********************************************************** footer -->
-    <footer class="footer" id="footer">
+    <footer class="footer">
         <h3 class="footer__title">ohmyfood</h3>
         <ul class="footer__links">
             <li>
@@ -28,7 +118,7 @@
                     restaurant</a>
             </li>
             <li>
-                <a href="#footer" class="footer__link bold"><i class="fa-solid fa-handshake-angle fa-xs"></i> Devenir
+                <a href="#footer" class="footer__link bold"><i class="fa-solid fa-handshake-angle"></i> Devenir
                     partenaire</a>
             </li>
             <li><a href="#footer" class="footer__link">Mentions légales</a></li>

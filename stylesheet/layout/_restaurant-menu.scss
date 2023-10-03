@@ -39,7 +39,7 @@
       forwards;
   }
   // menu parts
-  &__choices {
+  &__part {
     opacity: 0;
     border: none;
     display: flex;
@@ -64,6 +64,7 @@
     }
   }
   &__dish {
+    cursor: pointer;
     position: relative;
     background-color: $bg-color-secondary;
     padding: 15px;
