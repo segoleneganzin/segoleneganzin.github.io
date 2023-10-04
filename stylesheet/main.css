@@ -258,7 +258,7 @@ p {
 .loader i {
   position: absolute;
   top: 40%;
-  width: 100%;
+  width: 99%;
   text-align: center;
   opacity: 1;
   animation: loader 3s ease-in-out forwards;
@@ -847,6 +847,7 @@ p {
 .homepage {
   opacity: 0;
   animation: loading 1s ease-in 2.5s forwards;
+  overflow: hidden;
 }
 
 .homepage main {
