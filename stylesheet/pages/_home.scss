@@ -1,10 +1,11 @@
-// layout/home-location
-// layout/home-search-area
-// layout/home-operating
-// layout/home-restaurants
-// this page is an overlay of sections
+/***************************** HOME *****************************/
+/* layout/home-location */
+/* layout/home-search-area */
+/* layout/home-operating */
+/* layout/home-restaurants */
+/* this page is an overlay of sections */
 
-// loader
+/* loader */
 .homepage {
   opacity: 0;
   animation: loading $homepage-appearing-dur ease-in $homepage-appearing-delay

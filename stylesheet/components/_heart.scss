@@ -1,3 +1,4 @@
+/***************************** HEARTS COMPONENTS *****************************/
 .fa-heart {
   position: absolute;
   z-index: 99;
@@ -17,7 +18,7 @@
   }
 }
 
-// ******************************* homepage restaurants section
+/* homepage restaurants section */
 @for $i from 1 through $num-restaurants {
   #restaurants-heart--#{$i}:checked + label {
     .heart {
@@ -32,7 +33,7 @@
   }
 }
 
-// ******************************* restaurant menu
+/* restaurant menu */
 #menu-heart:checked + label {
   .heart {
     &--unlike {
