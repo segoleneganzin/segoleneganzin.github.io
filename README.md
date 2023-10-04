@@ -2,7 +2,7 @@
 
 ## Dynamiser une page web avec des animations CSS
 
-![Maquettes Oh My Food](https://user.oc-static.com/upload/2022/06/22/16559016787093_Untitled%20design.png
+![Maquettes Oh My Food](https://user.oc-static.com/upload/2022/06/22/16559016787093_Untitled%20design.png)
 
 Projet 3 du parcours "**Développeur d'application** - JavaScript React" d'OpenClassrooms
 
@@ -17,7 +17,7 @@ En plus des systèmes classiques de réservation, les clients pourront composer 
 
 HTML5/CSS3 <br>
 Sass <br>
-Figma ([voir la maquette](<https://www.figma.com/file/LbSwGQnYZw2Kak0LWwnTLs/Maquettes-Ohmyfood-(mobile-et-desktop)-(Copy)?type=design&node-id=0-1&mode=design&t=RJb1Jw0AZT7CstPS-0>))
+Figma ( [voir la maquette](<https://www.figma.com/file/LbSwGQnYZw2Kak0LWwnTLs/Maquettes-Ohmyfood-(mobile-et-desktop)-(Copy)?type=design&node-id=0-1&mode=design&t=RJb1Jw0AZT7CstPS-0>) )
 
 ### Objectifs
 
