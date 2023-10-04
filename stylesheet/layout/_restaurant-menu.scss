@@ -40,7 +40,6 @@
     animation: appearing $appearing-dur ease-in-out $appearing-desserts-delay
       forwards;
   }
-  /* menu parts */
   &__part {
     opacity: 0;
     border: none;
