@@ -6,8 +6,8 @@
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
-  border-radius: $menu-border-radius $menu-border-radius 0 0;
-  padding: 40px 10px 40px 10px;
+  border-radius: $menu-border-radius;
+  padding: 40px 10px 0px 10px;
   max-width: 1024px;
   margin: auto;
   &__header {
@@ -26,6 +26,7 @@
       left: 20px;
     }
   }
+
   // progressive appearing of menu parts
   .starters {
     animation: appearing $appearing-dur ease-in-out forwards;
@@ -49,7 +50,7 @@
     padding: 0%;
     &-title {
       position: relative;
-      padding-left: 0%;
+      padding-left: 0;
       padding-bottom: 15px;
       margin-bottom: 5px;
       &::after {
@@ -109,6 +110,7 @@
     }
   }
   &__order-btn {
+    margin-top: 15px;
     padding: 15px 40px;
   }
 }
@@ -173,5 +175,10 @@
     &__dish {
       width: 65vw;
     }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding-bottom: 40px;
   }
 }
