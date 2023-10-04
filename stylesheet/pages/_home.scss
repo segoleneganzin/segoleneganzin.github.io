@@ -10,6 +10,7 @@
   opacity: 0;
   animation: loading $homepage-appearing-dur ease-in $homepage-appearing-delay
     forwards;
+  overflow: hidden;
 }
 
 .homepage main {
