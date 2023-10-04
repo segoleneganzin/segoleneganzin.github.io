@@ -1,4 +1,4 @@
-// buttons
+/* buttons */
 @mixin pseudo-elem {
   content: "";
   position: absolute;
@@ -8,7 +8,7 @@
   left: 0;
 }
 
-// heart like element
+/* heart like element */
 @mixin text-gradient {
   background: $bg-heart-gradient;
   background-clip: text;

@@ -1,3 +1,4 @@
+/***************************** RESTAURANT - MENU *****************************/
 .menu {
   position: relative;
   top: -60px;
@@ -27,7 +28,7 @@
     }
   }
 
-  // progressive appearing of menu parts
+  /* progressive appearing of menu parts */
   .starters {
     animation: appearing $appearing-dur ease-in-out forwards;
   }
@@ -39,7 +40,6 @@
     animation: appearing $appearing-dur ease-in-out $appearing-desserts-delay
       forwards;
   }
-  // menu parts
   &__part {
     opacity: 0;
     border: none;
@@ -115,7 +115,7 @@
   }
 }
 
-// select dish animation
+/* select dish animation */
 .menu__dish-price,
 .menu__dish-check {
   transition: transform $check-delay, width $check-delay;
@@ -137,7 +137,7 @@
   }
 }
 
-// Menu parts
+/* Menu parts */
 @keyframes appearing {
   0% {
     opacity: 0;
@@ -146,7 +146,7 @@
     opacity: 1;
   }
 }
-// check dish txt animations
+/* check dish txt animations */
 @keyframes reduce-txt {
   20% {
     width: 84.2%;
