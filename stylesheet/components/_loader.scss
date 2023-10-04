@@ -1,12 +1,11 @@
 /***************************** LOADER COMPONENT *****************************/
 .loader i {
-  z-index: 99;
   position: absolute;
   top: 40%;
-  width: 99%;
+  width: 100%;
   text-align: center;
   opacity: 1;
-  animation: loader $loader-dur ease-in forwards;
+  animation: loader $loader-dur ease-in-out forwards;
   font-size: 100px;
   @include text-gradient;
 }
@@ -19,7 +18,7 @@
   20%,
   60% {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1);
   }
   40%,
   80% {
