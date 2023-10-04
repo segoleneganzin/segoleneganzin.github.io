@@ -10,15 +10,15 @@ body {
   color: $font-principale-color;
 }
 p {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 300;
 }
 .p-emphase {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .fa-solid,
 .fa-regular {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 .link {
   color: $font-principale-color;
@@ -36,28 +36,28 @@ p {
   font-weight: 400;
 }
 .header__title {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .search-area__subtitle {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   color: $grey;
 }
 .menu {
   &__header-title {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   &__part-title {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
   }
   &__dish {
     &-name {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 500;
     }
     &-description {
-      font-size: 15px;
+      font-size: 0.9375rem;
       text-align: left;
       font-weight: 300;
     }
@@ -82,7 +82,7 @@ p {
     }
   }
   &-num {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: $bg-color-secondary;
   }
 }
@@ -98,16 +98,21 @@ p {
   }
 }
 
-@media screen and (max-width: 320px) {
-  .menu__dish {
-    &-name {
-      font-size: 16px;
+@media screen and (max-width: 372px) {
+  .menu {
+    &__header-title {
+      font-size: 1.625rem;
     }
-    &-description {
-      font-size: 12px;
-    }
-    &-price {
-      font-size: 13px;
+    &__dish {
+      &-name {
+        font-size: 1rem;
+      }
+      &-description {
+        font-size: 0.75rem;
+      }
+      &-price {
+        font-size: 0.813rem;
+      }
     }
   }
 }

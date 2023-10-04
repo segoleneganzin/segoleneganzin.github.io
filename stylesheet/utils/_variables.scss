@@ -1,8 +1,6 @@
 /* Colors */
 $green-light: #99e2d0;
 $green-dark: #008766;
-// $blue-light: #89c8fa;
-// $blue-dark: #003a68;
 $purple: #9356dc;
 $purple-light: lighten($purple, 4%);
 $pink: #ff79da;
@@ -39,6 +37,11 @@ $bg-btn-gradient-lighten: linear-gradient(
 );
 $btn-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 $btn-box-shadow-hover: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+
+/* loader */
+$loader-dur: 3s;
+$homepage-appearing-delay: $loader-dur - 0.5s;
+$homepage-appearing-dur: 1s;
 
 /* Restaurants */
 $num-restaurants: 4; // used for heart like / can be modified via js

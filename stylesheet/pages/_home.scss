@@ -3,6 +3,14 @@
 // layout/home-operating
 // layout/home-restaurants
 // this page is an overlay of sections
+
+// loader
+.homepage {
+  opacity: 0;
+  animation: loading $homepage-appearing-dur ease-in $homepage-appearing-delay
+    forwards;
+}
+
 .homepage main {
   max-width: 1440px;
   margin: auto;
@@ -19,6 +27,15 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+  }
+}
+
+@keyframes loading {
+  40% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

@@ -1,5 +1,4 @@
 .restaurant-page {
-  background-color: $bg-color-secondary;
   &__img {
     height: 275px;
     width: 100%;
@@ -9,3 +8,9 @@
   }
 }
 // layout/restaurant-menu
+
+@media screen and (min-width: 1024px) {
+  .restaurant-page {
+    background-color: $bg-color-secondary;
+  }
+}
