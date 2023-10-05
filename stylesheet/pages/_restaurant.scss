@@ -2,6 +2,7 @@
 /* layout/restaurant-menu */
 /* components/restaurant-dish */
 .restaurant-page {
+  overflow-y: auto;
   &__img {
     height: 275px;
     width: 100%;
