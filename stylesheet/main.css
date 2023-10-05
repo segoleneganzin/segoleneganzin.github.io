@@ -17,6 +17,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   background: #f6f6f6;
+  overflow: hidden;
 }
 
 h3,
@@ -262,12 +263,11 @@ p {
   overflow-y: hidden;
   z-index: 99;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .loader i {
-  position: absolute;
-  top: 40%;
-  width: 99%;
-  text-align: center;
   opacity: 1;
   animation: loader 3s ease-in-out forwards;
   font-size: 100px;
@@ -301,6 +301,7 @@ p {
   }
   100% {
     display: none;
+    z-index: -1;
   }
 }
 .menu__dish {
@@ -870,7 +871,6 @@ p {
 .homepage {
   opacity: 0;
   animation: loading 1s ease-in 2.5s forwards;
-  overflow: hidden;
 }
 
 .homepage main {
