@@ -1,15 +1,23 @@
 /***************************** LOADER COMPONENT *****************************/
-.loader i {
+.loader {
+  height: 100%;
+  width: 100vw;
+  animation: loader-div $loader-dur forwards;
+  overflow-y: hidden;
+  z-index: 99;
   position: absolute;
-  top: 40%;
-  width: 99%;
-  text-align: center;
-  opacity: 1;
-  animation: loader $loader-dur ease-in-out forwards;
-  font-size: 100px;
-  @include text-gradient;
+  i {
+    position: absolute;
+    top: 40%;
+    width: 99%;
+    text-align: center;
+    opacity: 1;
+    animation: loader $loader-dur ease-in-out forwards;
+    font-size: 100px;
+    @include text-gradient;
+    z-index: 99;
+  }
 }
-
 @keyframes loader {
   0% {
     opacity: 0;
@@ -28,5 +36,13 @@
   100% {
     transform: scale(0.3);
     opacity: 0;
+  }
+}
+@keyframes loader-div {
+  95% {
+    opacity: 0.8;
+  }
+  100% {
+    display: none;
   }
 }

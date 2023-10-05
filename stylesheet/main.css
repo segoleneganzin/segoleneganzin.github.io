@@ -255,6 +255,14 @@ p {
 }
 
 /***************************** LOADER COMPONENT *****************************/
+.loader {
+  height: 100%;
+  width: 100vw;
+  animation: loader-div 3s forwards;
+  overflow-y: hidden;
+  z-index: 99;
+  position: absolute;
+}
 .loader i {
   position: absolute;
   top: 40%;
@@ -267,6 +275,7 @@ p {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 99;
 }
 
 @keyframes loader {
@@ -284,6 +293,274 @@ p {
   100% {
     transform: scale(0.3);
     opacity: 0;
+  }
+}
+@keyframes loader-div {
+  95% {
+    opacity: 0.8;
+  }
+  100% {
+    display: none;
+  }
+}
+.menu__dish {
+  cursor: pointer;
+  position: relative;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 85vw;
+  max-width: 600px;
+}
+.menu__dish-name {
+  line-height: 1.6rem;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__dish-description {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 88%;
+}
+.menu__dish-price {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background-color: #ffffff;
+}
+.menu__dish-check {
+  color: #ffffff;
+  background-color: #99e2d0;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+/* select dish animation */
+.menu__dish-price,
+.menu__dish-check {
+  transition: transform 0.5s, width 0.5s;
+}
+
+#menu-dish--1:checked + label > .menu__dish-check {
+  transform: scaleX(1);
+}
+
+#menu-dish--1:checked + label > .menu__dish-price {
+  transform: translate(-50px);
+}
+
+#menu-dish--1:checked + label > .menu__dish-name,
+#menu-dish--1:checked + label > .menu__dish-description {
+  animation: reduce-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--1:not(:checked) + label > .menu__dish-name,
+#menu-dish--1:not(:checked) + label > .menu__dish-description {
+  animation: expand-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--2:checked + label > .menu__dish-check {
+  transform: scaleX(1);
+}
+
+#menu-dish--2:checked + label > .menu__dish-price {
+  transform: translate(-50px);
+}
+
+#menu-dish--2:checked + label > .menu__dish-name,
+#menu-dish--2:checked + label > .menu__dish-description {
+  animation: reduce-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--2:not(:checked) + label > .menu__dish-name,
+#menu-dish--2:not(:checked) + label > .menu__dish-description {
+  animation: expand-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--3:checked + label > .menu__dish-check {
+  transform: scaleX(1);
+}
+
+#menu-dish--3:checked + label > .menu__dish-price {
+  transform: translate(-50px);
+}
+
+#menu-dish--3:checked + label > .menu__dish-name,
+#menu-dish--3:checked + label > .menu__dish-description {
+  animation: reduce-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--3:not(:checked) + label > .menu__dish-name,
+#menu-dish--3:not(:checked) + label > .menu__dish-description {
+  animation: expand-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--4:checked + label > .menu__dish-check {
+  transform: scaleX(1);
+}
+
+#menu-dish--4:checked + label > .menu__dish-price {
+  transform: translate(-50px);
+}
+
+#menu-dish--4:checked + label > .menu__dish-name,
+#menu-dish--4:checked + label > .menu__dish-description {
+  animation: reduce-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--4:not(:checked) + label > .menu__dish-name,
+#menu-dish--4:not(:checked) + label > .menu__dish-description {
+  animation: expand-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--5:checked + label > .menu__dish-check {
+  transform: scaleX(1);
+}
+
+#menu-dish--5:checked + label > .menu__dish-price {
+  transform: translate(-50px);
+}
+
+#menu-dish--5:checked + label > .menu__dish-name,
+#menu-dish--5:checked + label > .menu__dish-description {
+  animation: reduce-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--5:not(:checked) + label > .menu__dish-name,
+#menu-dish--5:not(:checked) + label > .menu__dish-description {
+  animation: expand-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--6:checked + label > .menu__dish-check {
+  transform: scaleX(1);
+}
+
+#menu-dish--6:checked + label > .menu__dish-price {
+  transform: translate(-50px);
+}
+
+#menu-dish--6:checked + label > .menu__dish-name,
+#menu-dish--6:checked + label > .menu__dish-description {
+  animation: reduce-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--6:not(:checked) + label > .menu__dish-name,
+#menu-dish--6:not(:checked) + label > .menu__dish-description {
+  animation: expand-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--7:checked + label > .menu__dish-check {
+  transform: scaleX(1);
+}
+
+#menu-dish--7:checked + label > .menu__dish-price {
+  transform: translate(-50px);
+}
+
+#menu-dish--7:checked + label > .menu__dish-name,
+#menu-dish--7:checked + label > .menu__dish-description {
+  animation: reduce-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--7:not(:checked) + label > .menu__dish-name,
+#menu-dish--7:not(:checked) + label > .menu__dish-description {
+  animation: expand-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--8:checked + label > .menu__dish-check {
+  transform: scaleX(1);
+}
+
+#menu-dish--8:checked + label > .menu__dish-price {
+  transform: translate(-50px);
+}
+
+#menu-dish--8:checked + label > .menu__dish-name,
+#menu-dish--8:checked + label > .menu__dish-description {
+  animation: reduce-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--8:not(:checked) + label > .menu__dish-name,
+#menu-dish--8:not(:checked) + label > .menu__dish-description {
+  animation: expand-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--9:checked + label > .menu__dish-check {
+  transform: scaleX(1);
+}
+
+#menu-dish--9:checked + label > .menu__dish-price {
+  transform: translate(-50px);
+}
+
+#menu-dish--9:checked + label > .menu__dish-name,
+#menu-dish--9:checked + label > .menu__dish-description {
+  animation: reduce-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--9:not(:checked) + label > .menu__dish-name,
+#menu-dish--9:not(:checked) + label > .menu__dish-description {
+  animation: expand-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--10:checked + label > .menu__dish-check {
+  transform: scaleX(1);
+}
+
+#menu-dish--10:checked + label > .menu__dish-price {
+  transform: translate(-50px);
+}
+
+#menu-dish--10:checked + label > .menu__dish-name,
+#menu-dish--10:checked + label > .menu__dish-description {
+  animation: reduce-txt 0.2s ease-in-out forwards;
+}
+
+#menu-dish--10:not(:checked) + label > .menu__dish-name,
+#menu-dish--10:not(:checked) + label > .menu__dish-description {
+  animation: expand-txt 0.2s ease-in-out forwards;
+}
+
+/* check dish txt animations */
+@keyframes reduce-txt {
+  20% {
+    width: 84.2%;
+  }
+  50% {
+    width: 78.5%;
+  }
+  100% {
+    width: 69%;
+  }
+}
+@keyframes expand-txt {
+  0% {
+    width: 69%;
+  }
+  50% {
+    width: 78.5%;
+  }
+  100% {
+    width: 88%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__dish {
+    width: 65vw;
   }
 }
 /***************************** HEADER *****************************/
@@ -559,240 +836,9 @@ p {
   top: 25px;
   left: 0px;
 }
-.menu__dish {
-  cursor: pointer;
-  position: relative;
-  background-color: #ffffff;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  width: 85vw;
-  max-width: 600px;
-}
-.menu__dish-name {
-  line-height: 1.6rem;
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.menu__dish-description {
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  max-width: 88%;
-}
-.menu__dish-price {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  background-color: #ffffff;
-}
-.menu__dish-check {
-  color: #ffffff;
-  background-color: #99e2d0;
-  position: absolute;
-  right: 0%;
-  top: 0%;
-  height: 100%;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scaleX(0);
-  transform-origin: right;
-}
 .menu__order-btn {
   margin-top: 15px;
   padding: 15px 40px;
-}
-
-/* select dish animation */
-.menu__dish-price,
-.menu__dish-check {
-  transition: transform 0.5s, width 0.5s;
-}
-
-#menu-dish--1:checked + label > .menu__dish-check {
-  transform: scaleX(1);
-}
-
-#menu-dish--1:checked + label > .menu__dish-price {
-  transform: translate(-50px);
-}
-
-#menu-dish--1:checked + label > .menu__dish-name,
-#menu-dish--1:checked + label > .menu__dish-description {
-  animation: reduce-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--1:not(:checked) + label > .menu__dish-name,
-#menu-dish--1:not(:checked) + label > .menu__dish-description {
-  animation: expand-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--2:checked + label > .menu__dish-check {
-  transform: scaleX(1);
-}
-
-#menu-dish--2:checked + label > .menu__dish-price {
-  transform: translate(-50px);
-}
-
-#menu-dish--2:checked + label > .menu__dish-name,
-#menu-dish--2:checked + label > .menu__dish-description {
-  animation: reduce-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--2:not(:checked) + label > .menu__dish-name,
-#menu-dish--2:not(:checked) + label > .menu__dish-description {
-  animation: expand-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--3:checked + label > .menu__dish-check {
-  transform: scaleX(1);
-}
-
-#menu-dish--3:checked + label > .menu__dish-price {
-  transform: translate(-50px);
-}
-
-#menu-dish--3:checked + label > .menu__dish-name,
-#menu-dish--3:checked + label > .menu__dish-description {
-  animation: reduce-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--3:not(:checked) + label > .menu__dish-name,
-#menu-dish--3:not(:checked) + label > .menu__dish-description {
-  animation: expand-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--4:checked + label > .menu__dish-check {
-  transform: scaleX(1);
-}
-
-#menu-dish--4:checked + label > .menu__dish-price {
-  transform: translate(-50px);
-}
-
-#menu-dish--4:checked + label > .menu__dish-name,
-#menu-dish--4:checked + label > .menu__dish-description {
-  animation: reduce-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--4:not(:checked) + label > .menu__dish-name,
-#menu-dish--4:not(:checked) + label > .menu__dish-description {
-  animation: expand-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--5:checked + label > .menu__dish-check {
-  transform: scaleX(1);
-}
-
-#menu-dish--5:checked + label > .menu__dish-price {
-  transform: translate(-50px);
-}
-
-#menu-dish--5:checked + label > .menu__dish-name,
-#menu-dish--5:checked + label > .menu__dish-description {
-  animation: reduce-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--5:not(:checked) + label > .menu__dish-name,
-#menu-dish--5:not(:checked) + label > .menu__dish-description {
-  animation: expand-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--6:checked + label > .menu__dish-check {
-  transform: scaleX(1);
-}
-
-#menu-dish--6:checked + label > .menu__dish-price {
-  transform: translate(-50px);
-}
-
-#menu-dish--6:checked + label > .menu__dish-name,
-#menu-dish--6:checked + label > .menu__dish-description {
-  animation: reduce-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--6:not(:checked) + label > .menu__dish-name,
-#menu-dish--6:not(:checked) + label > .menu__dish-description {
-  animation: expand-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--7:checked + label > .menu__dish-check {
-  transform: scaleX(1);
-}
-
-#menu-dish--7:checked + label > .menu__dish-price {
-  transform: translate(-50px);
-}
-
-#menu-dish--7:checked + label > .menu__dish-name,
-#menu-dish--7:checked + label > .menu__dish-description {
-  animation: reduce-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--7:not(:checked) + label > .menu__dish-name,
-#menu-dish--7:not(:checked) + label > .menu__dish-description {
-  animation: expand-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--8:checked + label > .menu__dish-check {
-  transform: scaleX(1);
-}
-
-#menu-dish--8:checked + label > .menu__dish-price {
-  transform: translate(-50px);
-}
-
-#menu-dish--8:checked + label > .menu__dish-name,
-#menu-dish--8:checked + label > .menu__dish-description {
-  animation: reduce-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--8:not(:checked) + label > .menu__dish-name,
-#menu-dish--8:not(:checked) + label > .menu__dish-description {
-  animation: expand-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--9:checked + label > .menu__dish-check {
-  transform: scaleX(1);
-}
-
-#menu-dish--9:checked + label > .menu__dish-price {
-  transform: translate(-50px);
-}
-
-#menu-dish--9:checked + label > .menu__dish-name,
-#menu-dish--9:checked + label > .menu__dish-description {
-  animation: reduce-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--9:not(:checked) + label > .menu__dish-name,
-#menu-dish--9:not(:checked) + label > .menu__dish-description {
-  animation: expand-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--10:checked + label > .menu__dish-check {
-  transform: scaleX(1);
-}
-
-#menu-dish--10:checked + label > .menu__dish-price {
-  transform: translate(-50px);
-}
-
-#menu-dish--10:checked + label > .menu__dish-name,
-#menu-dish--10:checked + label > .menu__dish-description {
-  animation: reduce-txt 0.2s ease-in-out forwards;
-}
-
-#menu-dish--10:not(:checked) + label > .menu__dish-name,
-#menu-dish--10:not(:checked) + label > .menu__dish-description {
-  animation: expand-txt 0.2s ease-in-out forwards;
 }
 
 /* Menu parts */
@@ -802,34 +848,6 @@ p {
   }
   100% {
     opacity: 1;
-  }
-}
-/* check dish txt animations */
-@keyframes reduce-txt {
-  20% {
-    width: 84.2%;
-  }
-  50% {
-    width: 78.5%;
-  }
-  100% {
-    width: 69%;
-  }
-}
-@keyframes expand-txt {
-  0% {
-    width: 69%;
-  }
-  50% {
-    width: 78.5%;
-  }
-  100% {
-    width: 88%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu__dish {
-    width: 65vw;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -844,6 +862,11 @@ p {
 /* layout/home-restaurants */
 /* this page is an overlay of sections */
 /* loader */
+.body-homepage {
+  overflow-y: clip;
+  animation: bloc-scroll 3s forwards;
+}
+
 .homepage {
   opacity: 0;
   animation: loading 1s ease-in 2.5s forwards;
@@ -870,6 +893,14 @@ p {
   gap: 1.5rem;
 }
 
+@keyframes bloc-scroll {
+  99% {
+    overflow-y: clip;
+  }
+  100% {
+    overflow-y: auto;
+  }
+}
 @keyframes loading {
   40% {
     opacity: 0.3;
@@ -898,6 +929,8 @@ p {
   }
 }
 /***************************** RESTAURANT *****************************/
+/* layout/restaurant-menu */
+/* components/restaurant-dish */
 .restaurant-page__img {
   height: 275px;
   width: 100%;
@@ -908,7 +941,6 @@ p {
      object-position: 50% 60%;
 }
 
-/* layout/restaurant-menu */
 @media screen and (min-width: 1024px) {
   .restaurant-page {
     background-color: #ffffff;

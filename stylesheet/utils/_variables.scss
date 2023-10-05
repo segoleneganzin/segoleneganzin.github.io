@@ -45,10 +45,10 @@ $homepage-appearing-delay: $loader-dur - 0.5s;
 $homepage-appearing-dur: 1s;
 
 /* Restaurants */
-$num-restaurants: 4; // used for heart like / can be modified via js
+$num-restaurants: 4; // used for heart like
 
 /* Menu */
-$num-dish: 10; // max of all restaurants (not best practice but with js and DB we can avoid that by mapping and set the good value of each restauarants)
+$num-dish: 10; // max of all restaurants
 $appearing-dur: 1.2s;
 $appearing-main-courses-delay: $appearing-dur - 0.5s;
 $appearing-desserts-delay: $appearing-dur + $appearing-dur - 1s;
