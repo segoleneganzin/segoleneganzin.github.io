@@ -931,6 +931,9 @@ p {
 /***************************** RESTAURANT *****************************/
 /* layout/restaurant-menu */
 /* components/restaurant-dish */
+.restaurant-page {
+  overflow-y: auto;
+}
 .restaurant-page__img {
   height: 275px;
   width: 100%;
