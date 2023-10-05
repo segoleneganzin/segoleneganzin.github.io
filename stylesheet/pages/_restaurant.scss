@@ -1,4 +1,6 @@
 /***************************** RESTAURANT *****************************/
+/* layout/restaurant-menu */
+/* components/restaurant-dish */
 .restaurant-page {
   &__img {
     height: 275px;
@@ -8,7 +10,6 @@
     object-position: 50% 60%;
   }
 }
-/* layout/restaurant-menu */
 
 @media screen and (min-width: 1024px) {
   .restaurant-page {

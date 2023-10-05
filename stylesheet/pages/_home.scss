@@ -6,6 +6,10 @@
 /* this page is an overlay of sections */
 
 /* loader */
+.body-homepage {
+  overflow-y: clip;
+  animation: bloc-scroll $loader-dur forwards;
+}
 .homepage {
   opacity: 0;
   animation: loading $homepage-appearing-dur ease-in $homepage-appearing-delay
@@ -32,7 +36,18 @@
   }
 }
 
+@keyframes bloc-scroll {
+  99% {
+    overflow-y: clip;
+  }
+  100% {
+    overflow-y: auto;
+  }
+}
+
 @keyframes loading {
+  10% {
+  }
   40% {
     opacity: 0.3;
   }
