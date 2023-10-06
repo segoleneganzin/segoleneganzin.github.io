@@ -2,7 +2,7 @@
 /* layout/restaurant-menu */
 /* components/restaurant-dish */
 .restaurant-page {
-  overflow-y: auto;
+  overflow-y: auto; //without this firefox clip page
   &__img {
     height: 275px;
     width: 100%;
