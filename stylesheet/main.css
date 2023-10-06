@@ -304,6 +304,7 @@ p {
     z-index: -1;
   }
 }
+/***************************** RESTAURANT DISH COMPONENT *****************************/
 .menu__dish {
   cursor: pointer;
   position: relative;
